@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url("https://fonts.google.com/specimen/Josefin+Sans");
+}
+
+*{
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+.app {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  background-color: #161722;
+}
+
+.headerImage {
+  position: absolute;
+  background-image: url("./bg-desktop-dark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+}
+
+.activeContainer {
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainHeaderbar {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  color: white;
+  letter-spacing: 15px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.mainContainer {
+  width: clamp(400px, 30vw, 600px);
+}
+
+.addNewTask {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todoInput {
+  height: 50px;
+  width: 100%;
+  background-color: #25273c;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: large;
+  border-radius: 10px 0 0 10px;
+}
+
+.addTodoButton {
+  background-color: #25273c;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+
+.addCross {
+  transform: rotate(45deg);
+}
+
+.listContainer {
+  margin-top: 3rem;
+  height: clamp(10vh, 50vh, 60vh);
+  overflow-y: scroll;
+}
+
+.listContainer::-webkit-scrollbar {
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 6px;
+  background-color: #161722;
+}
+
+.listContainer::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.todoListItem {
+  position: relative;;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #25273c;
+  color: white;
+  padding-left: 5px;
+  outline-color: white;
+  justify-content: space-between;
+}
+
+.taskTextContainer {
+  display: flex;
+  align-items: center;
+}
+
+.completed {
+  vertical-align: middle;
+}
+
+.todoListText {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  height: 1.1rem;
+  width: 1.1rem;
+  background-color: red;
+}
+
+.deleteButton {
+  cursor: pointer;
+}
+
+.delIcon {
+  margin-right: 1rem;
+}
+
+.strikeOver {
+  text-decoration: line-through;
+  color: hsl(233, 14%, 35%);
+}
+
+.filtersContainer {
+  top: 0;
+  width: 98.85%;
+  height: 50px;
+  background-color: #25273c;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: hsl(233, 14%, 35%);
+  justify-content: space-evenly;
+  gap: 2.7rem;
+  font-size: small;
+}
+
+.remainingItemsIndicator {
+  color: hsl(234, 11%, 52%);
+}
+
+.filtersIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.7rem;
+}
+
+.filtersIcons > div:hover {
+  cursor: pointer;
+  color: hsl(236, 33%, 92%);
+}
+
+.clearCompleted:hover {
+  cursor: pointer;
+  color: hsl(236, 33%, 92%);
+}
+
+.activeFilter {
+  color: hsl(220, 98%, 61%);
+}
