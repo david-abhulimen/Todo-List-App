@@ -1,5 +1,5 @@
 {
-  "homepage": "https://david-abhulimen.github.io/todo-list-app",
+  "homepage": "https://david-abhulimen.github.io/Todo-List-App/",
   "name": "to-do_list",
   "version": "0.1.0",
   "private": true,
@@ -40,6 +40,6 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.1.1"
   }
 }
